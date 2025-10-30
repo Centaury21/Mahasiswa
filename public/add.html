@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add || Mahasiswa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-12 max-w-2xl">
+        <h2 class="text-2xl font-bold mb-6 text-gray-800">Tambah Mahasiswa Baru</h2>
+
+        <form id="form-tambah" class="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4">
+
+            <div class="mb-6">
+                <label for="nim" class="block text-gray-700 text-sm font-bold mb-2">NIM</label>
+                <input type="text" id="nim" name="nim" required
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div class="mb-6">
+                <label for="nama" class="block text-gray-700 text-sm font-bold mb-2">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" required
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div class="mb-6">
+                <label for="jurusan" class="block text-gray-700 text-sm font-bold mb-2">Jurusan</label>
+                <select id="jurusan" name="jurusan" required
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="Teknik Informatika">Teknik Informatika</option>
+                    <option value="Sistem Informasi">Sistem Informasi</option>
+                    <option value="Desain Komunikasi Visual">Sistem Komputer</option>
+                </select>
+            </div>
+
+            <div class="mb-6">
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                <input type="email" id="email" name="email"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div class="mb-6">
+                <label for="alamat" class="block text-gray-700 text-sm font-bold mb-2">Alamat</label>
+                <textarea id="alamat" name="alamat" rows="3"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button type="submit"
+                    class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                    Simpan Data
+                </button>
+                <a href="/"
+                    class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded inline-block focus:outline-none focus:shadow-outline">
+                    Batal
+                </a>
+            </div>
+        </form>
+    </div>
+
+    <script type="module" src="/js/app.js"></script>
+</body>
+
+</html>

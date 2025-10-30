@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home || Mahasiswa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-8">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold mb-6 text-gray-800">Daftar Mahasiswa</h1>
+
+        <a href="add.html"
+            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-6">
+            Tambah Data
+        </a>
+
+        <div id="message-container" class="mb-4"></div>
+
+        <div class="shadow rounded-lg overflow-hidden">
+            <table class="min-w-full bg-white">
+                <thead class="bg-gray-800 text-white">
+                    <tr>
+                        <th class="py-3 px-4 uppercase font-semibold text-sm">NIM</th>
+                        <th class="py-3 px-4 uppercase font-semibold text-sm">Nama</th>
+                        <th class="py-3 px-4 uppercase font-semibold text-sm">Jurusan</th>
+                        <th class="py-3 px-4 uppercase font-semibold text-sm">Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="tabel-mahasiswa" class="text-gray-700">
+                    <tr>
+                        <td colspan="4" class="p-4 text-center">Memuat data...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="module" src="/js/app.js"></script>
+</body>
+
+</html>
